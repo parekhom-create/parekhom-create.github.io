@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Om Parekh’s software portfolio featuring Swift and Python projects.">
+<title>Om Parekh — Software Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#10131c;--ink:#f2f3f8;--muted:#bec5d4;--accent:#bdf7d4;--line:#353c4e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}header,main,footer{width:min(1100px,calc(100% - 44px));margin:auto}header,footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--line)}nav{display:flex;gap:20px;flex-wrap:wrap}a{color:inherit;text-underline-offset:4px}nav a,.brand,.button{text-decoration:none}a:hover{color:var(--accent)}:focus-visible{outline:3px solid #ffcc9c;outline-offset:5px}.brand{font-weight:750}.hero{padding:clamp(65px,12vw,152px) 0;background:radial-gradient(ellipse at 75% 45%,#253451 0,transparent 62%)}.eyebrow,.meta{font-family:ui-monospace,monospace;color:var(--accent);font-size:.875rem}.eyebrow{text-transform:uppercase;letter-spacing:.12em}h1,h2,h3,p{margin:0}h1{font-size:clamp(3.5rem,12vw,8rem);line-height:.98;letter-spacing:-.085em;margin:15px 0 22px}h2{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.05em;line-height:1.1;margin-bottom:22px}h3{font-size:clamp(1.4rem,3vw,1.85rem);line-height:1.15}.intro,.copy{color:var(--muted);max-width:58ch}.intro{font-size:clamp(1.05rem,3vw,1.35rem)}.button{display:inline-block;background:var(--accent);color:#12251e;padding:10px 19px;border-radius:8px;font-weight:750;margin-top:23px}.button:hover{background:white;color:#12251e}section+section{padding:45px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project{background:#191e2b;border:1px solid var(--line);border-radius:18px;overflow:hidden}.project-content{padding:23px;display:grid;gap:13px}.surface{min-height:190px;display:grid;place-items:center;padding:24px;background:#212f3b}.surface.library{background:#282640}.demo{width:min(100%,310px);border-radius:12px;background:#101922;border:1px solid #59677c;padding:15px;color:#f7f9ff;box-shadow:0 12px 28px #0005}.demo strong{display:block;font-size:1.1rem}.demo small{font-size:.825rem;color:#dddce9}.result{display:block;margin-top:10px;background:#3b3024;color:#ffe2b1;padding:6px 10px;border-radius:6px}.book-row{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #465065;margin-top:9px;padding-top:7px}.book-row span{color:#eadfff}.project a{width:fit-content;color:var(--accent);font-weight:650}.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}.skills{padding:0;margin:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;align-content:start}.skills li{border:1px solid var(--line);padding:5px 11px;border-radius:7px}footer{border-top:1px solid var(--line);border-bottom:0;color:var(--muted)}@media(max-width:690px){.grid,.about{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="#">Om Parekh</a><nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="https://github.com/parekhom-create">GitHub</a></nav></header>
+<main>
+<section class="hero" aria-labelledby="name">
+<p class="eyebrow">Software portfolio · United Kingdom</p>
+<h1 id="name">Om Parekh</h1>
+<p class="intro">I build practical software, from an iPhone app that reads food labels to a Python desktop app that tracks library loans.</p>
+<a class="button" href="#projects">Explore my projects</a>
+</section>
+<section id="projects">
+<h2>Selected projects</h2>
+<div class="grid">
+<article class="project">
+<div class="surface" aria-hidden="true"><div class="demo"><strong>PackCheck</strong><small>Example label · May contain egg</small><span class="result">Possible trace match · Egg</span></div></div>
+<div class="project-content"><p class="meta">Swift · iOS · Vision</p><h3>PackCheck</h3><p class="copy">An iPhone prototype that reads ingredient labels and checks for terms you choose to avoid. It looks up products by barcode and distinguishes a listed ingredient from a “may contain” warning.</p><a href="https://github.com/parekhom-create/PackCheck">View PackCheck on GitHub</a></div>
+</article>
+<article class="project">
+<div class="surface library" aria-hidden="true"><div class="demo"><strong>Library catalogue</strong><small>Example circulation records</small><small class="book-row">Python Basics <span>Available</span></small><small class="book-row">Web Design <span>On loan</span></small></div></div>
+<div class="project-content"><p class="meta">Python · Tkinter · CSV</p><h3>Library Book Loan System</h3><p class="copy">A desktop coursework project with separate librarian and member screens. The app manages book records, supports borrowing and returns, and saves data in CSV files.</p><a href="https://github.com/parekhom-create/Library-Book-Loan-System">View Library Book Loan System on GitHub</a></div>
+</article>
+</div>
+</section>
+<section id="about" class="about">
+<div><h2>About me</h2><p class="copy">I’m developing my skills in Python and Swift through coursework and personal projects. I’m interested in UK IT and software development internships where I can contribute to a team and build software people can use.</p></div>
+<ul class="skills" aria-label="Project technologies"><li>Python</li><li>Swift</li><li>Tkinter</li><li>SwiftUI</li><li>Xcode</li><li>GitHub</li></ul>
+</section>
+</main>
+<footer><span>Om Parekh</span><a href="https://github.com/parekhom-create">Find me on GitHub</a></footer>
+</body>
+</html>
